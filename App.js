@@ -1,25 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Button from'./components/Button';
 
 export default function App() {
+  
   return (
     <View style={styles.container}>
-      <Text>Chapter Cache is operational.</Text>
+      <Text style={styles.text}>ChapterCache</Text>
       <StatusBar style="auto" />
+	  <View style={styles.footerContainer}>
+	    <Button label="+" />
+	  </View>
     </View>
+	
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'top',
+	marginTop: 50,
   },
+  
+  text: {
+	  fontSize: 50,
+	  color: '#000',
+  },
+  footerContainer: {
+	  flex: 1/3,
+	  alignItems: 'right',
+	  borderColor: 'black',
+	  backgroundColor: 'white',
+  }
 });
-
-// [ChapterCache] is the best.
-
-// Daniel is the best.
-// Are you sure?
