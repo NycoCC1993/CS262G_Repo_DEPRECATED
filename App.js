@@ -18,3 +18,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// Daniel is the best.
